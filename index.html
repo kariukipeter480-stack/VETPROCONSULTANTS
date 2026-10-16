@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vetpro Consultancy — agricultural, livestock and veterinary equipment with countrywide delivery in Kenya.">
+  <title>Vetpro Consultancy | Agricultural & Livestock Equipment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Reliable farm equipment. Practical solutions. <strong>Countrywide delivery across Kenya.</strong></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Vetpro Consultancy home">
+      <span class="brand-mark">V<span>+</span></span>
+      <span class="brand-copy"><strong>VETPRO</strong><small>CONSULTANCY</small></span>
+    </a>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#shop">Shop equipment</a><a href="#categories">Categories</a><a href="#services">Our services</a><a href="#about">About us</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="searchToggle" aria-label="Search">⌕</button>
+      <button class="icon-button cart-button" id="cartOpen" aria-label="Open cart">♧ <span id="cartCount">0</span></button>
+      <button class="admin-entry" id="adminOpen">Admin <span>↗</span></button>
+    </div>
+  </header>
+
+  <div class="search-bar hidden" id="searchBar">
+    <input id="searchInput" type="search" placeholder="Search milking machines, drinkers, poultry equipment…">
+    <button class="primary-button" id="searchSubmit">Search products</button>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR FARM. BETTER EQUIPPED.</div>
+        <h1>Better equipment.<br><em>Better farming.</em></h1>
+        <p>Practical, dependable equipment for livestock keepers, poultry farmers and modern agricultural businesses across Kenya.</p>
+        <div class="hero-buttons"><a class="primary-button" href="#shop">Explore products <span>→</span></a><a class="text-button" href="#services">Talk to our team <span>↗</span></a></div>
+        <div class="hero-proof"><div class="avatar-stack"><span>V</span><span>F</span><span>+</span></div><div><strong>Farm-focused expertise</strong><small>Equipment for work that matters</small></div></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image" role="img" aria-label="Dairy cattle on a green farm"></div>
+        <div class="floating-card floating-top"><span class="floating-icon">✓</span><div><strong>Farm-ready solutions</strong><small>Selected for everyday use</small></div></div>
+        <div class="floating-card floating-bottom"><span class="mini-stat">KE</span><div><strong>Delivery across Kenya</strong><small>Ask us about your location</small></div></div>
+        <div class="hero-shape"></div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><span class="trust-icon">✳</span><span><strong>Practical products</strong><small>Built around farm needs</small></span></div>
+      <div><span class="trust-icon">⌁</span><span><strong>Helpful guidance</strong><small>Choose with confidence</small></span></div>
+      <div><span class="trust-icon">➜</span><span><strong>Countrywide delivery</strong><small>Across Kenya</small></span></div>
+      <div><span class="trust-icon">♡</span><span><strong>Customer support</strong><small>Here when you need us</small></span></div>
+    </section>
+
+    <section class="section categories-section" id="categories">
+      <div class="section-heading"><div><span class="section-kicker">SHOP BY CATEGORY</span><h2>Everything your farm needs.</h2></div><a class="underlined-link" href="#shop">Browse all products <span>→</span></a></div>
+      <div class="category-grid">
+        <button class="category-card" data-category="Dairy"><span class="category-image dairy"></span><span class="category-label"><strong>Dairy equipment</strong><small>Milking, cooling & hygiene</small><b>Explore ↗</b></span></button>
+        <button class="category-card" data-category="Poultry"><span class="category-image poultry"></span><span class="category-label"><strong>Poultry equipment</strong><small>Brooding, feeding & watering</small><b>Explore ↗</b></span></button>
+        <button class="category-card" data-category="Veterinary"><span class="category-image vet"></span><span class="category-label"><strong>Veterinary supplies</strong><small>Tools for animal care</small><b>Explore ↗</b></span></button>
+        <button class="category-card" data-category="Livestock"><span class="category-image livestock"></span><span class="category-label"><strong>Livestock essentials</strong><small>Handling, feeding & ID</small><b>Explore ↗</b></span></button>
+      </div>
+    </section>
+
+    <section class="section products-section" id="shop">
+      <div class="section-heading product-heading"><div><span class="section-kicker">THE FARM SHOP</span><h2>Popular with farmers.</h2><p>Explore useful equipment for your next farm upgrade.</p></div><div class="product-filters"><button class="filter active" data-filter="All">All products</button><button class="filter" data-filter="Dairy">Dairy</button><button class="filter" data-filter="Poultry">Poultry</button><button class="filter" data-filter="Veterinary">Veterinary</button></div></div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="center-action"><button class="secondary-button" id="showMore">View all products <span>→</span></button></div>
+    </section>
+
+    <section class="consult-banner" id="services">
+      <div class="consult-visual"></div><div class="consult-copy"><span class="section-kicker light">NOT SURE WHAT YOU NEED?</span><h2>Let’s find the right fit for your farm.</h2><p>Tell us about your animals, setup and goals. Our team can help you explore suitable equipment and practical options.</p><a class="light-button" href="https://wa.me/254704644672?text=Hello%20Vetpro%20Consultancy%2C%20I%20need%20help%20choosing%20farm%20equipment." target="_blank" rel="noopener">Chat with Vetpro on WhatsApp <span>↗</span></a></div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div><span class="section-kicker">ABOUT VETPRO</span><h2>Supporting the people<br>who feed us.</h2></div>
+      <div class="about-copy"><p>Vetpro Consultancy supplies agricultural, livestock and veterinary equipment to help farmers work more confidently. We focus on practical products, useful guidance and responsive customer support.</p><div class="about-points"><span>01 / Farm-focused selection</span><span>02 / Helpful product guidance</span><span>03 / Delivery across Kenya</span></div></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-main"><div class="footer-brand"><a class="brand brand-light" href="#"><span class="brand-mark">V<span>+</span></span><span class="brand-copy"><strong>VETPRO</strong><small>CONSULTANCY</small></span></a><p>Your No.1 Agriequipreneur.</p></div><div><strong>Explore</strong><a href="#shop">Shop equipment</a><a href="#categories">Categories</a><a href="#services">Consultation</a></div><div><strong>Contact</strong><a href="tel:+254704644672">0704 644 672</a><a href="mailto:vetproconsultancy@gmail.com">vetproconsultancy@gmail.com</a><span>Nairobi, Kenya</span></div><div><strong>Need help?</strong><p>Talk to our team about product availability, pricing and delivery.</p><a class="footer-whatsapp" href="https://wa.me/254704644672" target="_blank" rel="noopener">WhatsApp us ↗</a></div></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Vetpro Consultancy. All rights reserved.</span><span>Designed for better farming in Kenya.</span></div>
+  </footer>
+
+  <div class="overlay hidden" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="drawer-header"><div><span class="section-kicker">YOUR SELECTION</span><h3>Shopping cart</h3></div><button class="close-button" id="cartClose">×</button></div>
+    <div class="cart-items" id="cartItems"></div><div class="cart-footer"><div class="cart-total"><span>Estimated total</span><strong id="cartTotal">KES 0</strong></div><p>Prices and availability are confirmed by our team before payment.</p><a id="checkoutWhatsApp" class="primary-button full-width" target="_blank" rel="noopener" href="https://wa.me/254704644672">Enquire on WhatsApp ↗</a></div>
+  </aside>
+
+  <section class="admin-modal hidden" id="adminModal" aria-modal="true" role="dialog" aria-labelledby="adminTitle">
+    <div class="admin-top"><div><span class="section-kicker">STORE MANAGEMENT</span><h2 id="adminTitle">Vetpro Admin</h2><p>Manage the storefront content in this browser.</p></div><button class="close-button" id="adminClose">×</button></div>
+    <div class="admin-login" id="adminLogin"><div class="login-icon">V+</div><h3>Sign in to manage your store</h3><p>Demo access for this front-end prototype. Change this before any public deployment.</p><label>Username<input id="adminUsername" value="admin" autocomplete="username"></label><label>Password<input id="adminPassword" type="password" placeholder="Enter demo password" autocomplete="current-password"></label><button class="primary-button full-width" id="adminLoginButton">Open admin panel →</button><small>Demo password: <b>Vetpro@2026</b></small><p class="form-error" id="loginError"></p></div>
+    <div class="admin-workspace hidden" id="adminWorkspace">
+      <aside class="admin-sidebar"><button class="admin-tab active" data-panel="overview">▦ Overview</button><button class="admin-tab" data-panel="products">▣ Products</button><button class="admin-tab" data-panel="content">✎ Store content</button><button class="admin-tab" data-panel="settings">⚙ Contact settings</button><button class="admin-tab logout" id="adminLogout">↪ Sign out</button></aside>
+      <div class="admin-content">
+        <div class="admin-panel" id="panel-overview"><h3>Store overview</h3><p class="admin-subtitle">A quick look at your demo storefront.</p><div class="admin-stats"><div><small>Products</small><strong id="statProducts">0</strong></div><div><small>Categories</small><strong>4</strong></div><div><small>Cart items</small><strong id="statCart">0</strong></div></div><div class="admin-note"><strong>Before going live</strong><p>This prototype saves edits in the current browser only. Add a secure backend, real authentication, database, inventory controls and payment integration before public launch.</p></div></div>
+        <div class="admin-panel hidden" id="panel-products"><div class="admin-panel-heading"><div><h3>Products</h3><p class="admin-subtitle">Add products or edit existing listings.</p></div><button class="primary-button small-button" id="addProduct">+ Add product</button></div><div class="admin-product-list" id="adminProductList"></div><div class="product-editor hidden" id="productEditor"><h4 id="editorTitle">Add product</h4><div class="editor-grid"><label>Product name<input id="editName" placeholder="Product name"></label><label>Category<select id="editCategory"><option>Dairy</option><option>Poultry</option><option>Veterinary</option><option>Livestock</option><option>Farm essentials</option></select></label><label>Price (KES)<input id="editPrice" type="number" min="0" placeholder="0"></label><label>Badge<input id="editBadge" placeholder="e.g. Popular"></label><label class="span-two">Image URL<input id="editImage" placeholder="https://..."></label><label class="span-two">Short description<textarea id="editDescription" rows="2" placeholder="Describe the product"></textarea></label><label class="checkbox-label"><input id="editFeatured" type="checkbox"> Feature this product</label><label class="checkbox-label"><input id="editAvailable" type="checkbox" checked> Available to enquire</label></div><div class="editor-actions"><button class="secondary-button" id="cancelEdit">Cancel</button><button class="primary-button" id="saveProduct">Save product</button></div><p class="form-error" id="productError"></p></div></div>
+        <div class="admin-panel hidden" id="panel-content"><h3>Store content</h3><p class="admin-subtitle">Edit the headline and store messaging.</p><div class="settings-form"><label>Hero headline<input id="contentHeadline"></label><label>Hero supporting text<textarea id="contentDescription" rows="3"></textarea></label><label>Announcement bar<input id="contentAnnouncement"></label><label>Brand tagline<input id="contentTagline"></label><button class="primary-button" id="saveContent">Save store content</button><p class="success-message" id="contentSuccess"></p></div></div>
+        <div class="admin-panel hidden" id="panel-settings"><h3>Contact settings</h3><p class="admin-subtitle">Update the contact details shown on the store.</p><div class="settings-form"><label>Phone number<input id="settingPhone"></label><label>WhatsApp number, international format<input id="settingWhatsapp" placeholder="2547..."></label><label>Email address<input id="settingEmail" type="email"></label><label>Location<input id="settingLocation"></label><button class="primary-button" id="saveSettings">Save contact details</button><p class="success-message" id="settingsSuccess"></p></div></div>
+      </div>
+    </div>
+  </section>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
